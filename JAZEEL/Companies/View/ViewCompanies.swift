@@ -31,12 +31,12 @@ struct copmaniesView: View{
                 VStack(alignment: .leading,spacing: 8, content: {
                     
                     Text(modelData.title)
-                        .font(Font.custom("SF Pro", size: 18))
+                        .font(Font.custom("SF Pro", size: 21))
                         .fontWeight(.bold)
                         .foregroundColor(Color(red: 0.01, green: 0.29, blue: 0.35))
                     
                     Text(modelData.caption)
-                        .font(Font.custom("SF Pro", size: 12))
+                        .font(Font.custom("SF Pro", size: 14))
                         .fontWeight(.regular)
                 })
                 .frame(maxWidth: .infinity, alignment:.leading)

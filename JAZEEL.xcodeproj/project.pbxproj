@@ -13,6 +13,8 @@
 		A44E6109293E699E005CF07A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A44E6108293E699E005CF07A /* Preview Assets.xcassets */; };
 		A44E61332940C33C005CF07A /* CompaniesDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44E61322940C33C005CF07A /* CompaniesDetails.swift */; };
 		A44E613529413C80005CF07A /* ViewCompanies.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44E613429413C80005CF07A /* ViewCompanies.swift */; };
+		A44EB9E62944F29F00FE54AF /* ConsultantsDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44EB9E52944F29F00FE54AF /* ConsultantsDetails.swift */; };
+		A44EB9E82944F39400FE54AF /* ConsultantsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44EB9E72944F39400FE54AF /* ConsultantsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		A44E6108293E699E005CF07A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A44E61322940C33C005CF07A /* CompaniesDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompaniesDetails.swift; sourceTree = "<group>"; };
 		A44E613429413C80005CF07A /* ViewCompanies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCompanies.swift; sourceTree = "<group>"; };
+		A44EB9E52944F29F00FE54AF /* ConsultantsDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsultantsDetails.swift; sourceTree = "<group>"; };
+		A44EB9E72944F39400FE54AF /* ConsultantsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsultantsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,7 @@
 		A44E6100293E699C005CF07A /* JAZEEL */ = {
 			isa = PBXGroup;
 			children = (
+				A44EB9E12944E81E00FE54AF /* Consultants */,
 				A44E612E2940C2E3005CF07A /* Companies */,
 				A44E6101293E699C005CF07A /* JAZEELApp.swift */,
 				A44E6103293E699C005CF07A /* ContentView.swift */,
@@ -99,6 +104,39 @@
 			sourceTree = "<group>";
 		};
 		A44E61312940C30A005CF07A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A44EB9E12944E81E00FE54AF /* Consultants */ = {
+			isa = PBXGroup;
+			children = (
+				A44EB9E42944E83500FE54AF /* ViewModel */,
+				A44EB9E32944E82F00FE54AF /* View */,
+				A44EB9E22944E82700FE54AF /* Model */,
+			);
+			path = Consultants;
+			sourceTree = "<group>";
+		};
+		A44EB9E22944E82700FE54AF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A44EB9E52944F29F00FE54AF /* ConsultantsDetails.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A44EB9E32944E82F00FE54AF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A44EB9E72944F39400FE54AF /* ConsultantsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A44EB9E42944E83500FE54AF /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -178,6 +216,8 @@
 				A44E613529413C80005CF07A /* ViewCompanies.swift in Sources */,
 				A44E6104293E699C005CF07A /* ContentView.swift in Sources */,
 				A44E6102293E699C005CF07A /* JAZEELApp.swift in Sources */,
+				A44EB9E82944F39400FE54AF /* ConsultantsView.swift in Sources */,
+				A44EB9E62944F29F00FE54AF /* ConsultantsDetails.swift in Sources */,
 				A44E61332940C33C005CF07A /* CompaniesDetails.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
