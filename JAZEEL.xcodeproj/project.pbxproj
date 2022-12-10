@@ -11,6 +11,8 @@
 		A44E6104293E699C005CF07A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44E6103293E699C005CF07A /* ContentView.swift */; };
 		A44E6106293E699E005CF07A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A44E6105293E699E005CF07A /* Assets.xcassets */; };
 		A44E6109293E699E005CF07A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A44E6108293E699E005CF07A /* Preview Assets.xcassets */; };
+		A44E61332940C33C005CF07A /* CompaniesDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44E61322940C33C005CF07A /* CompaniesDetails.swift */; };
+		A44E613529413C80005CF07A /* ViewCompanies.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44E613429413C80005CF07A /* ViewCompanies.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		A44E6103293E699C005CF07A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A44E6105293E699E005CF07A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A44E6108293E699E005CF07A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A44E61322940C33C005CF07A /* CompaniesDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompaniesDetails.swift; sourceTree = "<group>"; };
+		A44E613429413C80005CF07A /* ViewCompanies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCompanies.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,7 @@
 		A44E6100293E699C005CF07A /* JAZEEL */ = {
 			isa = PBXGroup;
 			children = (
+				A44E612E2940C2E3005CF07A /* Companies */,
 				A44E6101293E699C005CF07A /* JAZEELApp.swift */,
 				A44E6103293E699C005CF07A /* ContentView.swift */,
 				A44E6105293E699E005CF07A /* Assets.xcassets */,
@@ -65,6 +70,39 @@
 				A44E6108293E699E005CF07A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A44E612E2940C2E3005CF07A /* Companies */ = {
+			isa = PBXGroup;
+			children = (
+				A44E61312940C30A005CF07A /* ViewModel */,
+				A44E61302940C302005CF07A /* View */,
+				A44E612F2940C2F4005CF07A /* Model */,
+			);
+			path = Companies;
+			sourceTree = "<group>";
+		};
+		A44E612F2940C2F4005CF07A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A44E61322940C33C005CF07A /* CompaniesDetails.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A44E61302940C302005CF07A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A44E613429413C80005CF07A /* ViewCompanies.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A44E61312940C30A005CF07A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +175,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A44E613529413C80005CF07A /* ViewCompanies.swift in Sources */,
 				A44E6104293E699C005CF07A /* ContentView.swift in Sources */,
 				A44E6102293E699C005CF07A /* JAZEELApp.swift in Sources */,
+				A44E61332940C33C005CF07A /* CompaniesDetails.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
