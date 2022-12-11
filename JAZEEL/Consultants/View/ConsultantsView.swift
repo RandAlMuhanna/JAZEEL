@@ -8,7 +8,6 @@
 import SwiftUI
 
 
-
 struct consultantsView: View{
     
      var ModelData: ConsultantsDetails
