@@ -11,7 +11,7 @@ import SwiftUI
 struct JAZEELApp: App {
     var body: some Scene {
         WindowGroup {
-            ViewCompanies()
+            ConsultantsView()
         }
     }
 }

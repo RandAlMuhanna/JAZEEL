@@ -24,7 +24,7 @@ struct copmaniesView: View{
                 
                 Image(modelData.image)
                     .resizable()
-                    .aspectRatio(contentMode: .fit)
+                    .aspectRatio(contentMode: .fill)
                     .frame(width: 63 , height: 63)
                     .clipShape(Circle())
                 

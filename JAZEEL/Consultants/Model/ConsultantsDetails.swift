@@ -19,10 +19,10 @@ var ModelData: [ConsultantsDetails] = [
     
     ConsultantsDetails(image: "Cons", title: "Khaled", caption: "SABIC Supply a wide range of high-quality flat and long steel products. "),
     
-    ConsultantsDetails(image: "Cons2", title: "Reda Alidarous", caption: "Saudi Aramco operates the world's largest single hydrocarbon network, the Master Gas System."),
+    ConsultantsDetails(image: "Cons2", title: "Reda Alidarous", caption: "Licensed financial advisor in Saudi Arabia (License 579046), banking and financial experience exceeding 25 years, master's degree in financial sciences."),
     
-    ConsultantsDetails(image: "Cons3", title: "Mohammed Alkuwaiz", caption:  "Saudi Arabian bank and the world's largest Islamic bank by capital based on 2015 data."),
-    ConsultantsDetails(image: "Cons4", title: "Asem Alruhily", caption: "Saudi digital enabler of telecommunications services in the Kingdom of Saudi Arabia, and among the operators in the Middle East."),
+    ConsultantsDetails(image: "Cons3", title: "Mohammed Alkuwaiz", caption:  "Bachelor's degree in Administrative Sciences with honors from the Law Department at King Saud University in 1998."),
+    ConsultantsDetails(image: "Cons4", title: "Asem Alruhily", caption: "He a Liabilities Product Development Manager at Bank Albilad, managing wealth for major clients.."),
     
    
 ]
