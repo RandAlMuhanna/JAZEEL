@@ -46,38 +46,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1CA069662945B0520055D7D6 /* Splash */ = {
-			isa = PBXGroup;
-			children = (
-				1CA069672945B06B0055D7D6 /* View */,
-			);
-			path = Splash;
-			sourceTree = "<group>";
-		};
-		1CA069672945B06B0055D7D6 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				1CA069682945B0860055D7D6 /* Splash.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		1CA069852945D5900055D7D6 /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				1CA069862945D5B20055D7D6 /* View */,
-			);
-			path = Home;
-			sourceTree = "<group>";
-		};
-		1CA069862945D5B20055D7D6 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				1CA069892945D5EE0055D7D6 /* HomeView.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		A44E60F5293E699C005CF07A = {
 			isa = PBXGroup;
 			children = (
@@ -100,8 +68,6 @@
 				A44EBA0A29465F1700FE54AF /* ViewModel */,
 				A44EB9E22944E82700FE54AF /* Model */,
 				A44EBA0929465E0600FE54AF /* Views */,
-				1CA069852945D5900055D7D6 /* Home */,
-				1CA069662945B0520055D7D6 /* Splash */,
 				A44E6101293E699C005CF07A /* JAZEELApp.swift */,
 				A44E6103293E699C005CF07A /* ContentView.swift */,
 				A44E6105293E699E005CF07A /* Assets.xcassets */,
@@ -130,6 +96,8 @@
 		A44EBA0929465E0600FE54AF /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				1CA069682945B0860055D7D6 /* Splash.swift */,
+				1CA069892945D5EE0055D7D6 /* HomeView.swift */,
 				A44EB9E72944F39400FE54AF /* ConsultantsView.swift */,
 				A44E613429413C80005CF07A /* ViewCompanies.swift */,
 			);
