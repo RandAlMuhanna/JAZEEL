@@ -17,6 +17,7 @@
 		A44E613529413C80005CF07A /* ViewCompanies.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44E613429413C80005CF07A /* ViewCompanies.swift */; };
 		A44EB9E62944F29F00FE54AF /* ConsultantsDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44EB9E52944F29F00FE54AF /* ConsultantsDetails.swift */; };
 		A44EB9E82944F39400FE54AF /* ConsultantsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44EB9E72944F39400FE54AF /* ConsultantsView.swift */; };
+		A44EBA0C29465FC300FE54AF /* ConsultantsDetailsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44EBA0B29465FC300FE54AF /* ConsultantsDetailsVM.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		A44E613429413C80005CF07A /* ViewCompanies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCompanies.swift; sourceTree = "<group>"; };
 		A44EB9E52944F29F00FE54AF /* ConsultantsDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsultantsDetails.swift; sourceTree = "<group>"; };
 		A44EB9E72944F39400FE54AF /* ConsultantsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsultantsView.swift; sourceTree = "<group>"; };
+		A44EBA0B29465FC300FE54AF /* ConsultantsDetailsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsultantsDetailsVM.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,10 +97,11 @@
 		A44E6100293E699C005CF07A /* JAZEEL */ = {
 			isa = PBXGroup;
 			children = (
+				A44EBA0A29465F1700FE54AF /* ViewModel */,
+				A44EB9E22944E82700FE54AF /* Model */,
+				A44EBA0929465E0600FE54AF /* Views */,
 				1CA069852945D5900055D7D6 /* Home */,
 				1CA069662945B0520055D7D6 /* Splash */,
-				A44EB9E12944E81E00FE54AF /* Consultants */,
-				A44E612E2940C2E3005CF07A /* Companies */,
 				A44E6101293E699C005CF07A /* JAZEELApp.swift */,
 				A44E6103293E699C005CF07A /* ContentView.swift */,
 				A44E6105293E699E005CF07A /* Assets.xcassets */,
@@ -115,68 +118,28 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		A44E612E2940C2E3005CF07A /* Companies */ = {
-			isa = PBXGroup;
-			children = (
-				A44E61312940C30A005CF07A /* ViewModel */,
-				A44E61302940C302005CF07A /* View */,
-				A44E612F2940C2F4005CF07A /* Model */,
-			);
-			path = Companies;
-			sourceTree = "<group>";
-		};
-		A44E612F2940C2F4005CF07A /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				A44E61322940C33C005CF07A /* CompaniesDetails.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		A44E61302940C302005CF07A /* View */ = {
-			isa = PBXGroup;
-			children = (
-				A44E613429413C80005CF07A /* ViewCompanies.swift */,
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		A44E61312940C30A005CF07A /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
-		A44EB9E12944E81E00FE54AF /* Consultants */ = {
-			isa = PBXGroup;
-			children = (
-				A44EB9E42944E83500FE54AF /* ViewModel */,
-				A44EB9E32944E82F00FE54AF /* View */,
-				A44EB9E22944E82700FE54AF /* Model */,
-			);
-			path = Consultants;
-			sourceTree = "<group>";
-		};
 		A44EB9E22944E82700FE54AF /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A44E61322940C33C005CF07A /* CompaniesDetails.swift */,
 				A44EB9E52944F29F00FE54AF /* ConsultantsDetails.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		A44EB9E32944E82F00FE54AF /* View */ = {
+		A44EBA0929465E0600FE54AF /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				A44EB9E72944F39400FE54AF /* ConsultantsView.swift */,
+				A44E613429413C80005CF07A /* ViewCompanies.swift */,
 			);
-			path = View;
+			path = Views;
 			sourceTree = "<group>";
 		};
-		A44EB9E42944E83500FE54AF /* ViewModel */ = {
+		A44EBA0A29465F1700FE54AF /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				A44EBA0B29465FC300FE54AF /* ConsultantsDetailsVM.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -252,6 +215,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1CA069692945B0860055D7D6 /* Splash.swift in Sources */,
+				A44EBA0C29465FC300FE54AF /* ConsultantsDetailsVM.swift in Sources */,
 				A44E613529413C80005CF07A /* ViewCompanies.swift in Sources */,
 				A44E6104293E699C005CF07A /* ContentView.swift in Sources */,
 				A44E6102293E699C005CF07A /* JAZEELApp.swift in Sources */,

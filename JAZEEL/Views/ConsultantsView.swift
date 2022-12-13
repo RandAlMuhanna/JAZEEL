@@ -10,7 +10,9 @@ import SwiftUI
 
 struct consultantsView: View{
     
-     var ModelData: ConsultantsDetails
+    @State var ConsultantsSheet = false
+    
+    var ModelData: ConsultantsDetails
 
     var body: some View{
         
@@ -28,19 +30,22 @@ struct consultantsView: View{
                 VStack(alignment: .leading,spacing: 8, content: {
                     
                     Text(ModelData.title)
+                        .bold()
                         .font(Font.custom("SF Pro", size: 21))
-                        .fontWeight(.bold)
                         .foregroundColor(Color(red: 0.01, green: 0.29, blue: 0.35))
                     
                     Text(ModelData.caption)
                         .font(Font.custom("SF Pro", size: 14))
                         .fontWeight(.regular)
+                        .foregroundColor(Color.gray)
+
                 })
                 .frame(maxWidth: .infinity, alignment:.leading)
-                
-             
             }
+            // Implement sheets
             Button {
+                self.ConsultantsSheet = true
+                
             } label: {
               Text("Book")
                     .frame(width: 300 , height: 40)
@@ -52,7 +57,12 @@ struct consultantsView: View{
                     .padding()
                 
                 
-            }
+        }.sheet(isPresented: $ConsultantsSheet) {
+            
+            showSheet(ModelData: ModelData, ConsultantsSheet: $ConsultantsSheet)
+            
+                .presentationDetents([.medium, .large])
+        }
         }
     }
     
@@ -101,3 +111,54 @@ struct ConsultantsView_Previews: PreviewProvider {
         ConsultantsView()
     }
 }
+
+
+// Sheet Page
+
+struct showSheet: View {
+    
+    var ModelData: ConsultantsDetails
+    @Binding var ConsultantsSheet: Bool
+    
+    var body: some View{
+        
+        
+        NavigationView{
+            VStack{
+                
+                Image(ModelData.image)
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: 145 , height: 145)
+                    .clipShape(Circle())
+                    .padding()
+                
+                
+                Text(ModelData.title)
+                
+                    .font(Font.custom("SF Pro", size: 21))
+                    .foregroundColor(Color(red: 0.01, green: 0.29, blue: 0.35))
+                
+                Text(ModelData.Subs)
+                    .font(Font.custom("SF Pro", size: 14))
+                    .foregroundColor(Color.gray)
+                
+                Button{
+                    
+                }label: {
+                    Text("Continue")
+                        .frame(width: 300 , height: 40)
+                }
+                
+                .buttonBorderShape(.roundedRectangle(radius: 5))
+                .background(Color(red: 0.09, green: 0.24, blue: 0.30))
+                .foregroundColor(Color.white)
+                .cornerRadius(5)
+                .padding(.top, 35)
+                
+            }
+        }
+    }
+    
+}
+

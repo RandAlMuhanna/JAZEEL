@@ -5,7 +5,7 @@
 //  Created by Rand AlMuhanna on 13/05/1444 AH.
 //
 import Foundation
-import SwiftUI
+
 import UIKit
 
 
@@ -16,6 +16,7 @@ struct CompaniesDetails: Identifiable {
     var image: String
     var title: String
     var caption: String
+  
 }
 
 var modelData: [CompaniesDetails] = [
