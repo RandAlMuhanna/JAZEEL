@@ -17,7 +17,7 @@ struct ConsultantsDetails: Identifiable {
 
 var ModelData: [ConsultantsDetails] = [
     
-    ConsultantsDetails(image: "Cons", title: "Khaled", caption: "SABIC Supply a wide range of high-quality flat and long steel products. "),
+    ConsultantsDetails(image: "Cons1", title: "Khaled", caption: "SABIC Supply a wide range of high-quality flat and long steel products. "),
     
     ConsultantsDetails(image: "Cons2", title: "Reda Alidarous", caption: "Licensed financial advisor in Saudi Arabia (License 579046), banking and financial experience exceeding 25 years, master's degree in financial sciences."),
     
