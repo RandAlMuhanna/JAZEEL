@@ -19,7 +19,7 @@
 		A44E613529413C80005CF07A /* ViewCompanies.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44E613429413C80005CF07A /* ViewCompanies.swift */; };
 		A44EB9E62944F29F00FE54AF /* ConsultantsDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44EB9E52944F29F00FE54AF /* ConsultantsDetails.swift */; };
 		A44EB9E82944F39400FE54AF /* ConsultantsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44EB9E72944F39400FE54AF /* ConsultantsView.swift */; };
-		A44EBA0C29465FC300FE54AF /* ConsultantsDetailsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44EBA0B29465FC300FE54AF /* ConsultantsDetailsVM.swift */; };
+		A44EBA0C29465FC300FE54AF /* CompanyViewVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44EBA0B29465FC300FE54AF /* CompanyViewVM.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,7 +36,7 @@
 		A44E613429413C80005CF07A /* ViewCompanies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCompanies.swift; sourceTree = "<group>"; };
 		A44EB9E52944F29F00FE54AF /* ConsultantsDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsultantsDetails.swift; sourceTree = "<group>"; };
 		A44EB9E72944F39400FE54AF /* ConsultantsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsultantsView.swift; sourceTree = "<group>"; };
-		A44EBA0B29465FC300FE54AF /* ConsultantsDetailsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsultantsDetailsVM.swift; sourceTree = "<group>"; };
+		A44EBA0B29465FC300FE54AF /* CompanyViewVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyViewVM.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,7 +113,7 @@
 		A44EBA0A29465F1700FE54AF /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				A44EBA0B29465FC300FE54AF /* ConsultantsDetailsVM.swift */,
+				A44EBA0B29465FC300FE54AF /* CompanyViewVM.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -189,7 +189,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1CA069692945B0860055D7D6 /* Splash.swift in Sources */,
-				A44EBA0C29465FC300FE54AF /* ConsultantsDetailsVM.swift in Sources */,
+				A44EBA0C29465FC300FE54AF /* CompanyViewVM.swift in Sources */,
 				A44E613529413C80005CF07A /* ViewCompanies.swift in Sources */,
 				A44E6104293E699C005CF07A /* ContentView.swift in Sources */,
 				A43C823F29486B3F00AF873D /* CompanyDetails.swift in Sources */,
@@ -327,6 +327,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"JAZEEL/Preview Content\"";
+				DEVELOPMENT_TEAM = 6V3379368L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -356,6 +357,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"JAZEEL/Preview Content\"";
+				DEVELOPMENT_TEAM = 6V3379368L;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

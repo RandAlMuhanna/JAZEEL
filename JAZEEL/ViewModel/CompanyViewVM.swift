@@ -9,7 +9,7 @@ import SwiftUI
 
 
 
-struct ConsultantsDetailsVM {
+struct CompanyViewVM {
     
   
 

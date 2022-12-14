@@ -24,6 +24,7 @@ struct CompanyView: View{
             
             TabView(selection: self.$currentTab) {
                 
+                // Chart Page (Tag0)
                 VStack(alignment: .center){
                     
                     //Flage and Sector details
@@ -75,7 +76,7 @@ struct CompanyView: View{
                                 HStack(spacing: 205){
                                     Text(Image(systemName: "link.circle")) + Text("WEBSITE")
 
-                            Link(destination: URL(string: "https://sabic.com")!) {
+                            Link(destination: URL(string: "https://www.saudiexchange.sa/wps/portal/tadawul/market-participants/issuers/issuers-directory/company-details/!ut/p/z1/04_Sj9CPykssy0xPLMnMz0vMAfIjo8zi_Tx8nD0MLIy83V1DjA0czVx8nYP8PI0MDAz0I4EKzBEKDEJDLYEKjJ0DA11MjQzcTfW99KPSc_KTIGZllJQUWKkaqBqUJKYklpfmqBroRyXn5xYk5lUGV-Ym5QMVGRkYGuiHEzK1IDsop6zSUREAqh9qDw!!/")!) {
                                         Text(companyExeactData.website)
                                                 .foregroundColor(.blue)}
                                 }
@@ -112,9 +113,78 @@ struct CompanyView: View{
                 .tag(0)
                 
                 
-                Text("2").tag(1)
+                // Chart Page (Tag1)
+                VStack(alignment: .leading, spacing: 5) {
+                    Image("Chart")
+                        .resizable()
+                      .frame(width: 341,height: 180 ,alignment: .trailing)
+                    
+                    
+                        VStack(alignment: .leading, spacing:35) {
+                            
+                            
+                            HStack(spacing: 200){
+                                Text("PREVIOUS CLOSE")
+                                Text("SAR 81.60")
+                            }
+                            
+                            HStack(spacing: 175){
+                                Text("DAY RANGE")
+                               Text("SAR 80.70 - SAR 82.00")
+
+                            }
+                            
+                            HStack(spacing: 205){
+                                Text("YEAR RANGE")
+                                Text("SAR 80.7 - 141.4")
+                                
+                            }
+                            HStack(spacing: 240){
+                                
+                                Text("MARKET CAP")
+                                Text("246.00B ")
+                                
+                                
+                            }
+                            
+                            HStack(spacing: 270){
+                                
+                                Text("P/E RATIO")
+                                Text("11.61")
+                                
+                                
+                            }
+                            HStack(spacing: 230){
+                                
+                                Text("DIVIDEND YIELD")
+                                Text("5.49%")
+                                
+                                
+                            }
+                            HStack(spacing: 200){
+                                
+                                Text("PRIMARY EXCHANGE")
+
+                        Link(destination: URL(string: "https://www.saudiexchange.sa/wps/portal/tadawul/market-participants/issuers/issuers-directory/company-details/!ut/p/z1/04_Sj9CPykssy0xPLMnMz0vMAfIjo8zi_Tx8nD0MLIy83V1DjA0czVx8nYP8PI0MDAz0I4EKzBEKDEJDLYEKjJ0DA11MjQzcTfW99KPSc_KTIGZllJQUWKkaqBqUJKYklpfmqBroRyXn5xYk5lUGV-Ym5QMVGRkYGuiHEzK1IDsop6zSUREAqh9qDw!!/")!) {
+                                    Text("Tadawl")
+                                            .foregroundColor(.blue)}
+                            }
+                    
+                            Spacer()
+                                
+                        }
+                        .background{
+                            RoundedRectangle(cornerRadius: 5)
+                            .fill(Color(red: 0.97, green: 0.97, blue: 0.97))
+                            .frame(width: 350,height: .infinity )
+                        }
+                        .foregroundColor(Color(red: 0.09, green: 0.24, blue: 0.30))
+                        .font(Font.custom("SF Pro", size: 12))
+                }
+                
+                .tag(1)
+                    
                 .tabViewStyle(.page(indexDisplayMode: .never))
-                .background(Color.white)
             }
             .edgesIgnoringSafeArea(.all)
         }
@@ -191,6 +261,10 @@ struct CompanyView: View{
             
         }
     }
+    
+    
+    
+    
     struct TabBarItem: View {
         
         @Binding var currentTab: Int
