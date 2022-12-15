@@ -261,9 +261,6 @@ struct CompanyView: View{
         }
     }
     
-    
-    
-    
     struct TabBarItem: View {
         
         @Binding var currentTab: Int
@@ -293,6 +290,7 @@ struct CompanyView: View{
             .buttonStyle(.plain)
         }
     }
+    
     
     struct CompanyView_Previews: PreviewProvider {
         static var previews: some View {
