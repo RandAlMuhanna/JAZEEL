@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1CA069692945B0860055D7D6 /* Splash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA069682945B0860055D7D6 /* Splash.swift */; };
 		1CA0698A2945D5EE0055D7D6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA069892945D5EE0055D7D6 /* HomeView.swift */; };
+		1CD1C75B2949BF82005B146C /* PopUpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD1C75A2949BF82005B146C /* PopUpScreen.swift */; };
 		A43C823D29483CF000AF873D /* CompanyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43C823C29483CF000AF873D /* CompanyView.swift */; };
 		A43C823F29486B3F00AF873D /* CompanyDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43C823E29486B3F00AF873D /* CompanyDetails.swift */; };
 		A44E6102293E699C005CF07A /* JAZEELApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44E6101293E699C005CF07A /* JAZEELApp.swift */; };
@@ -30,6 +31,7 @@
 /* Begin PBXFileReference section */
 		1CA069682945B0860055D7D6 /* Splash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Splash.swift; sourceTree = "<group>"; };
 		1CA069892945D5EE0055D7D6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		1CD1C75A2949BF82005B146C /* PopUpScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpScreen.swift; sourceTree = "<group>"; };
 		A43C823C29483CF000AF873D /* CompanyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyView.swift; sourceTree = "<group>"; };
 		A43C823E29486B3F00AF873D /* CompanyDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyDetails.swift; sourceTree = "<group>"; };
 		A44E60FE293E699C005CF07A /* JAZEEL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JAZEEL.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -117,10 +119,12 @@
 				A44EB9E72944F39400FE54AF /* ConsultantsView.swift */,
 				A44E613429413C80005CF07A /* ViewCompanies.swift */,
 				A43C823C29483CF000AF873D /* CompanyView.swift */,
+
 				A4BA08B5294BBC8F000DA670 /* BookingDetails.swift */,
 				A4BA08B7294BBCD0000DA670 /* BookButton.swift */,
 				A4BA08B9294BBCFC000DA670 /* Confirmation.swift */,
 				A4BA08BB294BBD20000DA670 /* MySessions.swift */,
+				1CD1C75A2949BF82005B146C /* PopUpScreen.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -216,6 +220,7 @@
 				A44E6102293E699C005CF07A /* JAZEELApp.swift in Sources */,
 				A44EB9E82944F39400FE54AF /* ConsultantsView.swift in Sources */,
 				1CA0698A2945D5EE0055D7D6 /* HomeView.swift in Sources */,
+				1CD1C75B2949BF82005B146C /* PopUpScreen.swift in Sources */,
 				A44EB9E62944F29F00FE54AF /* ConsultantsDetails.swift in Sources */,
 				A43C823D29483CF000AF873D /* CompanyView.swift in Sources */,
 				A44E61332940C33C005CF07A /* CompaniesDetails.swift in Sources */,
