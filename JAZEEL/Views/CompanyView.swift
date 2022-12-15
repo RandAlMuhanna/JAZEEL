@@ -24,7 +24,7 @@ struct CompanyView: View{
             
             TabView(selection: self.$currentTab) {
                 
-                // Chart Page (Tag0)
+                // Stats Page (Tag0)
                 VStack(alignment: .center){
                     
                     //Flage and Sector details
@@ -109,7 +109,6 @@ struct CompanyView: View{
                 
                 .font(Font.custom("SF Pro", size: 14))
                 .foregroundColor(Color(red: 0.58, green: 0.58, blue: 0.58))
-                .fontWeight(.bold)
                 .tag(0)
                 
                 
@@ -117,14 +116,15 @@ struct CompanyView: View{
                 VStack(alignment: .leading, spacing: 5) {
                     Image("Chart")
                         .resizable()
-                      .frame(width: 341,height: 180 ,alignment: .trailing)
-                    
+                        .frame(width: 341,height: 180 ,alignment: .trailing)
+                      .padding()
                     
                         VStack(alignment: .leading, spacing:35) {
                             
                             
                             HStack(spacing: 200){
                                 Text("PREVIOUS CLOSE")
+
                                 Text("SAR 81.60")
                             }
                             
@@ -169,19 +169,18 @@ struct CompanyView: View{
                                     Text("Tadawl")
                                             .foregroundColor(.blue)}
                             }
+
                     
-                            Spacer()
-                                
-                        }
-                        .background{
-                            RoundedRectangle(cornerRadius: 5)
-                            .fill(Color(red: 0.97, green: 0.97, blue: 0.97))
-                            .frame(width: 350,height: .infinity )
+                          Spacer()
                         }
                         .foregroundColor(Color(red: 0.09, green: 0.24, blue: 0.30))
                         .font(Font.custom("SF Pro", size: 12))
                 }
-                
+                .background{
+                    RoundedRectangle(cornerRadius: 5)
+                    .fill(Color(red: 0.97, green: 0.97, blue: 0.97))
+                   // .frame(width: 350,height: .infinity )
+                }
                 .tag(1)
                     
                 .tabViewStyle(.page(indexDisplayMode: .never))
