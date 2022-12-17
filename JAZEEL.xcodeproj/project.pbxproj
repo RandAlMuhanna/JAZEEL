@@ -21,6 +21,7 @@
 		A44EB9E62944F29F00FE54AF /* ConsultantsDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44EB9E52944F29F00FE54AF /* ConsultantsDetails.swift */; };
 		A44EB9E82944F39400FE54AF /* ConsultantsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44EB9E72944F39400FE54AF /* ConsultantsView.swift */; };
 		A44EBA0C29465FC300FE54AF /* CompanyViewVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44EBA0B29465FC300FE54AF /* CompanyViewVM.swift */; };
+		A45F234C294E4C450019BE43 /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45F234B294E4C450019BE43 /* FilterView.swift */; };
 		A4BA08B4294BBC52000DA670 /* DetailBarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BA08B3294BBC52000DA670 /* DetailBarModel.swift */; };
 		A4BA08B6294BBC8F000DA670 /* BookingDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BA08B5294BBC8F000DA670 /* BookingDetails.swift */; };
 		A4BA08B8294BBCD0000DA670 /* BookButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4BA08B7294BBCD0000DA670 /* BookButton.swift */; };
@@ -44,6 +45,7 @@
 		A44EB9E52944F29F00FE54AF /* ConsultantsDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsultantsDetails.swift; sourceTree = "<group>"; };
 		A44EB9E72944F39400FE54AF /* ConsultantsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsultantsView.swift; sourceTree = "<group>"; };
 		A44EBA0B29465FC300FE54AF /* CompanyViewVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyViewVM.swift; sourceTree = "<group>"; };
+		A45F234B294E4C450019BE43 /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
 		A4BA08B3294BBC52000DA670 /* DetailBarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailBarModel.swift; sourceTree = "<group>"; };
 		A4BA08B5294BBC8F000DA670 /* BookingDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingDetails.swift; sourceTree = "<group>"; };
 		A4BA08B7294BBCD0000DA670 /* BookButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookButton.swift; sourceTree = "<group>"; };
@@ -119,12 +121,12 @@
 				A44EB9E72944F39400FE54AF /* ConsultantsView.swift */,
 				A44E613429413C80005CF07A /* ViewCompanies.swift */,
 				A43C823C29483CF000AF873D /* CompanyView.swift */,
-
 				A4BA08B5294BBC8F000DA670 /* BookingDetails.swift */,
 				A4BA08B7294BBCD0000DA670 /* BookButton.swift */,
 				A4BA08B9294BBCFC000DA670 /* Confirmation.swift */,
 				A4BA08BB294BBD20000DA670 /* MySessions.swift */,
 				1CD1C75A2949BF82005B146C /* PopUpScreen.swift */,
+				A45F234B294E4C450019BE43 /* FilterView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -211,6 +213,7 @@
 				A4BA08B6294BBC8F000DA670 /* BookingDetails.swift in Sources */,
 				1CA069692945B0860055D7D6 /* Splash.swift in Sources */,
 				A44EBA0C29465FC300FE54AF /* CompanyViewVM.swift in Sources */,
+				A45F234C294E4C450019BE43 /* FilterView.swift in Sources */,
 				A44E613529413C80005CF07A /* ViewCompanies.swift in Sources */,
 				A44E6104293E699C005CF07A /* ContentView.swift in Sources */,
 				A4BA08B4294BBC52000DA670 /* DetailBarModel.swift in Sources */,
