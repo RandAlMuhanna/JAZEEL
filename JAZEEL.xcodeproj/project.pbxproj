@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		021E461B294EF1F800CD2A4A /* Onboarding1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021E461A294EF1F800CD2A4A /* Onboarding1.swift */; };
+		021E461D294EF30700CD2A4A /* Onboarding2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021E461C294EF30700CD2A4A /* Onboarding2.swift */; };
+		021E461F294EF37200CD2A4A /* Onbording3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021E461E294EF37200CD2A4A /* Onbording3.swift */; };
+		021E4621294EF42900CD2A4A /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021E4620294EF42900CD2A4A /* Profile.swift */; };
+		021E4623294EF47300CD2A4A /* Edit Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021E4622294EF47300CD2A4A /* Edit Profile.swift */; };
 		1CA069692945B0860055D7D6 /* Splash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA069682945B0860055D7D6 /* Splash.swift */; };
 		1CA0698A2945D5EE0055D7D6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA069892945D5EE0055D7D6 /* HomeView.swift */; };
 		1CD1C75B2949BF82005B146C /* PopUpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD1C75A2949BF82005B146C /* PopUpScreen.swift */; };
@@ -30,6 +35,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		021E461A294EF1F800CD2A4A /* Onboarding1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding1.swift; sourceTree = "<group>"; };
+		021E461C294EF30700CD2A4A /* Onboarding2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding2.swift; sourceTree = "<group>"; };
+		021E461E294EF37200CD2A4A /* Onbording3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onbording3.swift; sourceTree = "<group>"; };
+		021E4620294EF42900CD2A4A /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		021E4622294EF47300CD2A4A /* Edit Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Edit Profile.swift"; sourceTree = "<group>"; };
 		1CA069682945B0860055D7D6 /* Splash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Splash.swift; sourceTree = "<group>"; };
 		1CA069892945D5EE0055D7D6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		1CD1C75A2949BF82005B146C /* PopUpScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpScreen.swift; sourceTree = "<group>"; };
@@ -117,6 +127,9 @@
 			isa = PBXGroup;
 			children = (
 				1CA069682945B0860055D7D6 /* Splash.swift */,
+				021E461A294EF1F800CD2A4A /* Onboarding1.swift */,
+				021E461C294EF30700CD2A4A /* Onboarding2.swift */,
+				021E461E294EF37200CD2A4A /* Onbording3.swift */,
 				1CA069892945D5EE0055D7D6 /* HomeView.swift */,
 				A44EB9E72944F39400FE54AF /* ConsultantsView.swift */,
 				A44E613429413C80005CF07A /* ViewCompanies.swift */,
@@ -127,6 +140,8 @@
 				A4BA08BB294BBD20000DA670 /* MySessions.swift */,
 				1CD1C75A2949BF82005B146C /* PopUpScreen.swift */,
 				A45F234B294E4C450019BE43 /* FilterView.swift */,
+				021E4620294EF42900CD2A4A /* Profile.swift */,
+				021E4622294EF47300CD2A4A /* Edit Profile.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -211,10 +226,13 @@
 			files = (
 				A4BA08B8294BBCD0000DA670 /* BookButton.swift in Sources */,
 				A4BA08B6294BBC8F000DA670 /* BookingDetails.swift in Sources */,
+				021E4623294EF47300CD2A4A /* Edit Profile.swift in Sources */,
+				021E461F294EF37200CD2A4A /* Onbording3.swift in Sources */,
 				1CA069692945B0860055D7D6 /* Splash.swift in Sources */,
 				A44EBA0C29465FC300FE54AF /* CompanyViewVM.swift in Sources */,
 				A45F234C294E4C450019BE43 /* FilterView.swift in Sources */,
 				A44E613529413C80005CF07A /* ViewCompanies.swift in Sources */,
+				021E461B294EF1F800CD2A4A /* Onboarding1.swift in Sources */,
 				A44E6104293E699C005CF07A /* ContentView.swift in Sources */,
 				A4BA08B4294BBC52000DA670 /* DetailBarModel.swift in Sources */,
 				A4BA08BA294BBCFC000DA670 /* Confirmation.swift in Sources */,
@@ -225,6 +243,8 @@
 				1CA0698A2945D5EE0055D7D6 /* HomeView.swift in Sources */,
 				1CD1C75B2949BF82005B146C /* PopUpScreen.swift in Sources */,
 				A44EB9E62944F29F00FE54AF /* ConsultantsDetails.swift in Sources */,
+				021E461D294EF30700CD2A4A /* Onboarding2.swift in Sources */,
+				021E4621294EF42900CD2A4A /* Profile.swift in Sources */,
 				A43C823D29483CF000AF873D /* CompanyView.swift in Sources */,
 				A44E61332940C33C005CF07A /* CompaniesDetails.swift in Sources */,
 			);
