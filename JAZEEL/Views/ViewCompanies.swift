@@ -16,6 +16,7 @@ struct copmaniesView: View{
      var modelData: CompaniesDetails
 
     var body: some View{
+        
         NavigationLink(destination: CompanyView(companyExeactData: CompanyDetails(image: "flag1",title: " Sector : Materials | Industry Group ", caption: "Saudi Basic Industries Corporation, known as SABIC, is a Saudi chemical manufacturing company. 70% of SABIC's shares are owned by Saudi Aramco. It is active in petrochemicals, chemicals, industrial polymers, fertilizers, and metals. It is the second largest public company in the Middle East and Saudi Arabia as listed in Tadawul.", founded: "sep 1976", headquarters: "Riyadh", website: "sabic.com", employees: "33,000"))){
             VStack{
                 
@@ -43,13 +44,13 @@ struct copmaniesView: View{
                     })
                     .frame(maxWidth: .infinity, alignment:.leading)
                     
-                    Button(action: {}, label: {
-                        Image(systemName: "chevron.right.square.fill")
-                            .foregroundColor(Color(red: 0.01, green: 0.29, blue: 0.35))
-                            .padding()
-                        
-                        
-                    })
+//                    Button(action: {}, label: {
+//                        Image(systemName: "chevron.right.square.fill")
+//                            .foregroundColor(Color(red: 0.01, green: 0.29, blue: 0.35))
+//                            .padding()
+//
+//
+//                    })
                 }
                 .padding()
                 .background{
@@ -60,13 +61,12 @@ struct copmaniesView: View{
                             RoundedRectangle(cornerRadius: 5)
                                 .stroke(Color.gray ,lineWidth: 0.5)
                         }
-                    
-                    
                 }
                 
             }
+
         }
-    
+        .foregroundColor(Color(red: 0.01, green: 0.29, blue: 0.35))
     }
     
 }
