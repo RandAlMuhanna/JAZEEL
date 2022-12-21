@@ -15,6 +15,9 @@
 		1CA069692945B0860055D7D6 /* Splash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA069682945B0860055D7D6 /* Splash.swift */; };
 		1CA0698A2945D5EE0055D7D6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA069892945D5EE0055D7D6 /* HomeView.swift */; };
 		1CD1C75B2949BF82005B146C /* PopUpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD1C75A2949BF82005B146C /* PopUpScreen.swift */; };
+		1CD1C75D29510F24005B146C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1CD1C75C29510F24005B146C /* GoogleService-Info.plist */; };
+		1CD1C761295114EA005B146C /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 1CD1C760295114EA005B146C /* FirebaseAuth */; };
+		1CD1C7632951161A005B146C /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD1C7622951161A005B146C /* Login.swift */; };
 		A43C823D29483CF000AF873D /* CompanyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43C823C29483CF000AF873D /* CompanyView.swift */; };
 		A43C823F29486B3F00AF873D /* CompanyDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43C823E29486B3F00AF873D /* CompanyDetails.swift */; };
 		A44E6102293E699C005CF07A /* JAZEELApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44E6101293E699C005CF07A /* JAZEELApp.swift */; };
@@ -43,6 +46,9 @@
 		1CA069682945B0860055D7D6 /* Splash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Splash.swift; sourceTree = "<group>"; };
 		1CA069892945D5EE0055D7D6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		1CD1C75A2949BF82005B146C /* PopUpScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpScreen.swift; sourceTree = "<group>"; };
+		1CD1C75C29510F24005B146C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1CD1C7622951161A005B146C /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		1CD1C764295118DB005B146C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		A43C823C29483CF000AF873D /* CompanyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyView.swift; sourceTree = "<group>"; };
 		A43C823E29486B3F00AF873D /* CompanyDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyDetails.swift; sourceTree = "<group>"; };
 		A44E60FE293E699C005CF07A /* JAZEEL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JAZEEL.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,17 +74,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CD1C761295114EA005B146C /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1CD1C75F295114EA005B146C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A44E60F5293E699C005CF07A = {
 			isa = PBXGroup;
 			children = (
 				A44E6100293E699C005CF07A /* JAZEEL */,
 				A44E60FF293E699C005CF07A /* Products */,
+				1CD1C75F295114EA005B146C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -93,6 +108,8 @@
 		A44E6100293E699C005CF07A /* JAZEEL */ = {
 			isa = PBXGroup;
 			children = (
+				1CD1C764295118DB005B146C /* Info.plist */,
+				1CD1C75C29510F24005B146C /* GoogleService-Info.plist */,
 				A44EBA0A29465F1700FE54AF /* ViewModel */,
 				A44EB9E22944E82700FE54AF /* Model */,
 				A44EBA0929465E0600FE54AF /* Views */,
@@ -142,6 +159,7 @@
 				A45F234B294E4C450019BE43 /* FilterView.swift */,
 				021E4620294EF42900CD2A4A /* Profile.swift */,
 				021E4622294EF47300CD2A4A /* Edit Profile.swift */,
+				1CD1C7622951161A005B146C /* Login.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -170,6 +188,9 @@
 			dependencies = (
 			);
 			name = JAZEEL;
+			packageProductDependencies = (
+				1CD1C760295114EA005B146C /* FirebaseAuth */,
+			);
 			productName = JAZEEL;
 			productReference = A44E60FE293E699C005CF07A /* JAZEEL.app */;
 			productType = "com.apple.product-type.application";
@@ -198,6 +219,9 @@
 				Base,
 			);
 			mainGroup = A44E60F5293E699C005CF07A;
+			packageReferences = (
+				1CD1C75E2951105A005B146C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = A44E60FF293E699C005CF07A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -214,6 +238,7 @@
 			files = (
 				A44E6109293E699E005CF07A /* Preview Assets.xcassets in Resources */,
 				A44E6106293E699E005CF07A /* Assets.xcassets in Resources */,
+				1CD1C75D29510F24005B146C /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +264,7 @@
 				A4BA08BC294BBD20000DA670 /* MySessions.swift in Sources */,
 				A43C823F29486B3F00AF873D /* CompanyDetails.swift in Sources */,
 				A44E6102293E699C005CF07A /* JAZEELApp.swift in Sources */,
+				1CD1C7632951161A005B146C /* Login.swift in Sources */,
 				A44EB9E82944F39400FE54AF /* ConsultantsView.swift in Sources */,
 				1CA0698A2945D5EE0055D7D6 /* HomeView.swift in Sources */,
 				1CD1C75B2949BF82005B146C /* PopUpScreen.swift in Sources */,
@@ -375,9 +401,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"JAZEEL/Preview Content\"";
-				DEVELOPMENT_TEAM = 6V3379368L;
+				DEVELOPMENT_TEAM = KJ7CQBG56G;
 				ENABLE_PREVIEWS = YES;
+				EXCLUDED_ARCHS = "";
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JAZEEL/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -405,9 +433,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"JAZEEL/Preview Content\"";
-				DEVELOPMENT_TEAM = 6V3379368L;
+				DEVELOPMENT_TEAM = KJ7CQBG56G;
 				ENABLE_PREVIEWS = YES;
+				EXCLUDED_ARCHS = "";
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = JAZEEL/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -449,6 +479,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1CD1C75E2951105A005B146C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1CD1C760295114EA005B146C /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1CD1C75E2951105A005B146C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A44E60F6293E699C005CF07A /* Project object */;
 }

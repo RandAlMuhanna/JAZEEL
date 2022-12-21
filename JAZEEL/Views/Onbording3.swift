@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct Onbording3: View {
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     var body: some View {
         VStack{
             
@@ -30,24 +31,26 @@ struct Onbording3: View {
               
             Spacer()
             HStack{
-                Button("PREV") {
-                    /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
-                }
-                .accentColor(/*@START_MENU_TOKEN@*/Color(red: 0.092, green: 0.235, blue: 0.301)/*@END_MENU_TOKEN@*/)
-                .padding()
+                Button("PREV"){
+                    self.presentationMode.wrappedValue.dismiss()
+                }   .padding(.leading,-2.0)
+                    .accentColor(/*@START_MENU_TOKEN@*/Color(red: 0.092, green: 0.235, blue: 0.301)/*@END_MENU_TOKEN@*/)
+                    .padding()
+             
                 Image("3")
                     .resizable()
                     .aspectRatio(contentMode:.fit)
                     .frame(width: 60)
                     .padding(.horizontal,60)
                 
-                Button("NEXT") {
-                    /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
+                NavigationLink(destination: HomeView()){
+                    Text("NEXT")  .foregroundColor(Color("Primary")).font(Font.custom("SF Pro", size: 18))
+                        .padding(.trailing, 19.0)
+                        
                 }
-                .accentColor(/*@START_MENU_TOKEN@*/Color(red: 0.092, green: 0.235, blue: 0.301)/*@END_MENU_TOKEN@*/)
-                .padding()
             }
         }
+        .navigationBarBackButtonHidden(true)
     }
 }
         

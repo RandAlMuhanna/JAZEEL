@@ -7,14 +7,17 @@
 
 import SwiftUI
 
+
+
 struct Splash: View {
+ 
     @State private var isActive = false
     @State private var size = 0.8
     @State private var opacity = 0.5
     
     var body: some View {
         if(isActive){
-          HomeView()
+          Onboarding1()
 
         }else{
             VStack{

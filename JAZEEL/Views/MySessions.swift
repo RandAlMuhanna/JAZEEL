@@ -13,7 +13,7 @@ struct MySessions: View {
     @Environment(\.presentationMode) var presentationMode
     
     var body: some View {
-        NavigationView{
+      
             VStack(spacing: 0) {
                 SessionBar
                     .padding(.top,20)
@@ -35,21 +35,21 @@ struct MySessions: View {
                         .foregroundColor(.gray)
                     Spacer()
                 }
-            }
-            
-            .navigationTitle("My Sessions")
-                .navigationBarTitleDisplayMode(.inline)
-                .toolbar {
-                    ToolbarItem(placement: .navigationBarLeading) {
-                        Image(systemName: "chevron.backward")
-                            .foregroundColor(Color("Shadow2"))
-                            .onTapGesture {
-                                presentationMode.wrappedValue.dismiss()
-                            }
+            }.navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .principal) {
+                    VStack {
+                        Text("My Sessions")
+                            .bold()
+                            .foregroundColor(Color("Primary"))
                     }
                 }
+            }
             
-        }
+           
+           
+            
+        
     
 }
         

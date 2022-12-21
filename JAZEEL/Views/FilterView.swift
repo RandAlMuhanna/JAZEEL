@@ -11,7 +11,7 @@ import SwiftUI
 
 struct FilterView: View {
     
-
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
     class ValueModel: Identifiable, ObservableObject, Equatable {
         
@@ -107,7 +107,7 @@ struct FilterView: View {
     
     
     var body: some View {
-        NavigationView {
+      
             ScrollView(.vertical, showsIndicators: true) {
                 VStack(alignment: .leading, spacing: 30) {
                     Text("Fill the following fields to customize the investment companies and consultant")
@@ -137,11 +137,19 @@ struct FilterView: View {
                 .frame(maxWidth: .infinity, alignment: .leading)
             }
             .padding(.horizontal)
-            .navigationTitle("Filter")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .principal) {
+                    HStack {
+                        Text("Filter")
+                            .bold()
+                            .foregroundColor(Color("Primary"))
+                    }}}
+            .padding()
             .foregroundColor(Color(red: 0.09, green: 0.24, blue: 0.30))
             
-            .navigationBarTitleDisplayMode(.inline)
-        }
+     
+        
     }
     
     @ViewBuilder
@@ -189,33 +197,18 @@ struct FilterView: View {
                        // .foregroundColor(.black))
                     .foregroundColor(Color(red: 0.09, green: 0.24, blue: 0.30))
             )}
-//                   Button {
-//                       // perform action
-//                   } label: {
-//                       Text("Filter")
-//                           .font(Font.custom("SF Pro", size: 18))
-//                           .fontWeight(.bold)
-//                           .foregroundColor(.white)
-//                           .padding(.horizontal, 50)
-//                           .padding(.vertical, 13)
-//                           .background(Color(red: 0.09, green: 0.24, blue: 0.30))
-//                          // .foregroundColor(Color(red: 0.09, green: 0.24, blue: 0.30))
-//                          // .background(Color.black)
-//                          // .cornerRadius(5)
-//                           .background(RoundedRectangle(cornerRadius: 5).stroke())
-//
-//                   }
+
                    
                    Spacer(minLength: 0)
                    
                    Button {
-                       // perform action
+                       self.presentationMode.wrappedValue.dismiss()
                    } label: {
                        Text("Cancel")
                            .font(Font.custom("SF Pro", size: 18))
                            .fontWeight(.bold)
                            .foregroundColor(.red)
-                           .padding(.horizontal, 50)
+                           .padding(.horizontal, 40)
                            .padding(.vertical, 13)
                            .background(RoundedRectangle(cornerRadius: 5).stroke()
                               // .foregroundColor(.black))

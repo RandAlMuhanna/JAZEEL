@@ -8,16 +8,18 @@
 import SwiftUI
 
 struct Onboarding2: View {
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     var body: some View {
         VStack{
             
             HStack{
                 Spacer()
-                Button("SKIP") {
-                    /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
+                NavigationLink(destination: HomeView()){
+                    Text("SKIP")  .foregroundColor(Color("Primary")).font(Font.custom("SF Pro", size: 18))
+                        .padding()
+                        
                 }
-                .accentColor(/*@START_MENU_TOKEN@*/Color(red: 0.092, green: 0.235, blue: 0.301)/*@END_MENU_TOKEN@*/)
-                .padding()
+          
                 
                 
                 
@@ -38,10 +40,13 @@ struct Onboarding2: View {
             
             Spacer()
             HStack{
-                Text("PREV")
-                    .padding(.leading,-2.0)
+                Button("PREV"){
+                    self.presentationMode.wrappedValue.dismiss()
+                }   .padding(.leading,-2.0)
                     .accentColor(/*@START_MENU_TOKEN@*/Color(red: 0.092, green: 0.235, blue: 0.301)/*@END_MENU_TOKEN@*/)
                     .padding()
+          
+                 
                 
                 Image("2")
                     .resizable()
@@ -49,13 +54,15 @@ struct Onboarding2: View {
                     .frame(width: 60)
                     .padding(.horizontal,70.0)
                 
-                
-                Button("NEXT") {
-                    /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
-                }.padding(.trailing, 19.0)
-                    .accentColor(/*@START_MENU_TOKEN@*/Color(red: 0.092, green: 0.235, blue: 0.301)/*@END_MENU_TOKEN@*/)
+                NavigationLink(destination: Onbording3()){
+                    Text("NEXT")  .foregroundColor(Color("Primary")).font(Font.custom("SF Pro", size: 18))
+                        .padding(.trailing, 19.0)
+                        
+                }
+         
             }
         }
+        .navigationBarBackButtonHidden(true)
     }
 }
     

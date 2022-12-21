@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct Edit_Profile: View {
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     var body: some View {
         VStack {
             
@@ -15,7 +16,7 @@ struct Edit_Profile: View {
                 
                 
                 Button("Cancel") {
-                    /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
+                    self.presentationMode.wrappedValue.dismiss()
                 }
                 .accentColor(/*@START_MENU_TOKEN@*/Color(red: 0.092, green: 0.235, blue: 0.301)/*@END_MENU_TOKEN@*/)
                 
@@ -56,7 +57,7 @@ struct Edit_Profile: View {
             }
         Spacer()
         }
-     
+        .navigationBarBackButtonHidden(true)
         .padding()
      
    
