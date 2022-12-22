@@ -47,7 +47,7 @@ struct BookingDetails: View {
         @State private var StringDate:String = ""
         @State private var StringTime:String = ""
         var body: some View {
-            NavigationView {
+         
            
                 VStack(alignment: .center, spacing:5) {
                   
@@ -75,7 +75,7 @@ struct BookingDetails: View {
                                     }
                                 }
                             }
-                    }
+                    
           
              
             
@@ -150,6 +150,8 @@ struct BookingDetails: View {
                                 }.frame(width: 350, height: 300)
                                 .background(Color(uiColor: .lightGray).opacity(0.2) ,in: RoundedRectangle(cornerRadius: 5))
                             .padding()
+            .navigationBarBackButtonHidden(true)
+            .navigationBarBackButtonHidden(true) 
         }
         
         var BookInfo: some View {

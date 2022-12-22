@@ -77,7 +77,7 @@ struct ConsultantsView: View {
         var body: some View {
             
             
-            NavigationView{
+           
                 VStack {
                     
                     //List Contain Most pupular Copmanies
@@ -102,7 +102,7 @@ struct ConsultantsView: View {
                         }
                     }
                 
-            }
+            
         }
 }
 
@@ -142,21 +142,20 @@ struct showSheet: View {
                 Text(ModelData.Subs)
                     .font(Font.custom("SF Pro", size: 14))
                     .foregroundColor(Color.gray)
-                
-                Button{
-                    
-                }label: {
+                NavigationLink(destination: BookingDetails()){
                     Text("Continue")
                         .frame(width: 300 , height: 40)
+                        .buttonBorderShape(.roundedRectangle(radius: 5))
+                        .background(Color(red: 0.09, green: 0.24, blue: 0.30))
+                        .foregroundColor(Color.white)
+                        .cornerRadius(5)
+                        .padding(.top, 35)
                 }
-                
-                .buttonBorderShape(.roundedRectangle(radius: 5))
-                .background(Color(red: 0.09, green: 0.24, blue: 0.30))
-                .foregroundColor(Color.white)
-                .cornerRadius(5)
-                .padding(.top, 35)
+           
                 
             }
+            .navigationBarHidden(true)
+            .navigationBarBackButtonHidden(true)
         }
     }
     

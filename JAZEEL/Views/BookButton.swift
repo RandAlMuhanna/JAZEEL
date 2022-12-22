@@ -11,7 +11,7 @@ import SwiftUI
 struct BookButton: View {
     var body: some View {
             NavigationLink(destination: Confirmation()
-                .navigationBarBackButtonHidden(), label: {
+               , label: {
                     Text("Book")
                         .foregroundColor(.white)
                         .font(.title2)
@@ -30,8 +30,9 @@ struct BookButton: View {
                     
                     
                 }
-                           
-            )
+              
+            ) .navigationBarHidden(true)
+            .navigationBarBackButtonHidden(true)
         }
 }
 

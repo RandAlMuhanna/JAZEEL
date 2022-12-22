@@ -30,30 +30,8 @@ struct Confirmation: View {
                     
                 
                                 
-               // VStack
-                Button(action: {
-                   // a = false
-                }, label: {
-                    Text("Home")
-                        .foregroundColor(.white)
-                        .font(.title2)
-                        .fontWeight(.regular)
-                        .padding(.horizontal,20)
-                        .padding(.vertical,21)
-                        .lineLimit(1)
-                        .frame(width: 300, height: 44)
-                    
-                        .background(
-                            RoundedRectangle(cornerRadius:5)
-                                .fill(Color("Shadow2"))
-                        )
-                    
-                    
-                    
-                }
-                       
-                ).padding(.top,300)
-            }
+      
+            }.navigationBarBackButtonHidden(true)
             
         }
         }
